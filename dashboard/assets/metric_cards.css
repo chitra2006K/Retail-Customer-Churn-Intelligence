@@ -1,0 +1,48 @@
+/* ==========================================
+   CUSTOMER INTELLIGENCE DASHBOARD
+   Professional Metric Card Styling
+   ========================================== */
+
+div[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5EE;
+    border-left: 5px solid #0F766E;
+    border-radius: 12px;
+    padding: 18px 16px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+    min-height: 112px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 16px rgba(15, 23, 42, 0.10);
+}
+
+div[data-testid="stMetric"] label {
+    color: #475569 !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: #0F172A !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricDelta"] {
+    font-size: 0.8rem !important;
+}
+
+/* Keep cards visually balanced on smaller screens. */
+@media (max-width: 900px) {
+    div[data-testid="stMetric"] {
+        padding: 14px 12px;
+        min-height: 96px;
+    }
+
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        font-size: 1.45rem !important;
+    }
+}
