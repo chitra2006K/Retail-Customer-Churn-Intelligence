@@ -6,6 +6,21 @@ Customer Intelligence is a machine learning project that analyses retail custome
 
 The project uses the Online Retail dataset and combines customer segmentation, machine learning models, and an interactive Streamlit dashboard.
 
+## 📊 Dashboard Preview
+
+The project includes an interactive Streamlit dashboard that provides insights into customer segmentation, churn predictions, and business recommendations.
+
+### Business Overview
+
+![Customer Intelligence Dashboard](dashboard/screenshots/business_overview.png)
+
+The dashboard provides:
+- Total customer and active customer metrics.
+- Predicted churn count and churn rate.
+- Customer segmentation overview.
+- Customer data preview.
+- Interactive customer analysis and business recommendations.
+
 ## Objectives
 
 - Analyse customer purchasing behaviour.
