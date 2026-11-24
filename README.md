@@ -21,6 +21,33 @@ The dashboard provides:
 - Customer data preview.
 - Interactive customer analysis and business recommendations.
 
+
+## 🏗️ Project Architecture
+
+The following diagram illustrates the complete workflow of the Customer Intelligence system, from raw retail data to customer insights and the interactive dashboard.
+
+```mermaid
+flowchart TD
+    A["Online Retail Dataset"] --> B["Data Loading & Cleaning"]
+    B --> C["Feature Engineering"]
+    C --> D["Customer Features"]
+
+    D --> E["Customer Segmentation"]
+    D --> F["Churn Prediction"]
+
+    E --> G["K-Means Clustering"]
+
+    F --> H["Logistic Regression"]
+    F --> I["Random Forest"]
+
+    G --> J["Customer Insights"]
+    H --> J
+    I --> J
+
+    J --> K["Business Recommendations"]
+    K --> L["Interactive Streamlit Dashboard"]
+```
+
 ## Objectives
 
 - Analyse customer purchasing behaviour.
